@@ -48,6 +48,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './public', 'index.html'),
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public', '404.html'),
+      filename: '404.html',
     }),
     new Dotenv(),
     new CopyWebpackPlugin({
@@ -62,6 +67,5 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
   },
 };

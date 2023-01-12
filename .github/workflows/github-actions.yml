@@ -17,10 +17,10 @@ jobs:
         run: npm install --force
       - name: build project
         run: npm run build
-      # - name: prettier format
-      #   run: npm run prettier
-      # - name: eslint code
-      #   run: npm run lint:fix
+      - name: prettier format
+        run: npm run prettier
+      - name: eslint code
+        run: npm run lint:fix
       - name: e2e test
         uses: cypress-io/github-action@v4.2.0
         with:
