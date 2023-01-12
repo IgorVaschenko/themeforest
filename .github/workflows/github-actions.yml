@@ -21,8 +21,8 @@ jobs:
       #   run: npm run prettier
       # - name: eslint code
       #   run: npm run lint:fix
-      # - name: e2e test
-      #   uses: cypress-io/github-action@v4.2.0
+      - name: e2e test
+        uses: cypress-io/github-action@v4.2.0
         with:
           install: false
           start: npm start
