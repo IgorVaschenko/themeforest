@@ -17,8 +17,6 @@ jobs:
         run: npm install --force
       - name: build project
         run: npm run build
-      - name: prettier format
-        run: npm run prettier
       - name: eslint code
         run: npm run lint:fix
       - name: e2e test
