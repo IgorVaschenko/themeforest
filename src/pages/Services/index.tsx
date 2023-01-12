@@ -1,12 +1,13 @@
 import Grid from '@mui/material/Grid';
 
-import Breadcrumbs from 'components/Breadcrumbs';
-import Footer from 'components/Footer';
-import ProvideServices from 'components/ProvideServices';
 import useMatch from 'hooks/useMatch';
 import { servicesInfo } from 'mocks';
 import { theme, themeParams } from 'theme';
 import { TfCard, TfHeadline, TfLink, TfParagraph } from 'themeforest-design-system-react';
+
+import Breadcrumbs from 'components/Breadcrumbs';
+import Footer from 'components/Footer';
+import ProvideServices from 'components/ProvideServices';
 
 const Services = () => {
   const { isMatch } = useMatch();

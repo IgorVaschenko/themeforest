@@ -1,11 +1,13 @@
 import { useMemo } from 'react';
 
 import { Dialog, Stack } from '@mui/material';
-import PaymentForm from 'components/PaymentForm';
-import ProsList from 'components/ProsList';
+
 import { themeParams } from 'theme';
 import { TfHeadline } from 'themeforest-design-system-react';
 import { parsePriceValue } from 'utils';
+
+import PaymentForm from 'components/PaymentForm';
+import ProsList from 'components/ProsList';
 
 import { Props } from './types';
 

@@ -1,10 +1,11 @@
 import { Grid } from '@mui/material';
 
-import SubscribeForm from 'components/SubcribeForm';
 import { themeParams } from 'theme';
 import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
 
 import { Props } from 'types';
+
+import SubscribeForm from 'components/SubcribeForm';
 
 const Subscribe = ({ isMatch }: Props) => {
   return (

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 import { SwipeableDrawer } from '@mui/material';
-import BurgerMenu from 'components/Burger';
+
 import { TfIcons } from 'themeforest-design-system-react';
+
+import BurgerMenu from 'components/Burger';
 
 const Drawer = () => {
   const [open, setOpen] = useState(false);

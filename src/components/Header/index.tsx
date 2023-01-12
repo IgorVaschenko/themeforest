@@ -4,12 +4,14 @@ import { useCallback, useState } from 'react';
 
 import { Grid, useMediaQuery, useTheme } from '@mui/material';
 
+import { Paths, routes } from 'routes';
+
+import { TfButton, TfIcons } from 'themeforest-design-system-react';
+
 import Drawer from 'components/Drawer';
 import NavBar from 'components/NavBar';
 
 import VideoContainer from 'components/VideoContainer';
-import { Paths, routes } from 'routes';
-import { TfButton, TfIcons } from 'themeforest-design-system-react';
 
 import { HeaderContainer } from './styled';
 

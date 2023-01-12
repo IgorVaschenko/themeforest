@@ -1,13 +1,17 @@
 import { Grid } from '@mui/material';
 
+import useMatch from 'hooks/useMatch';
+
+import { teamInfo } from 'mocks';
+
+import { themeParams } from 'theme';
+
+import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
+
 import Breadcrumbs from 'components/Breadcrumbs';
 import FooterLinks from 'components/FooterLinks';
 import Subscribe from 'components/Subcribe';
 import TeamBox from 'components/TeamBox';
-import useMatch from 'hooks/useMatch';
-import { teamInfo } from 'mocks';
-import { themeParams } from 'theme';
-import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
 
 const Team = () => {
   const { isMatch } = useMatch();

@@ -1,10 +1,12 @@
 import { Grid } from '@mui/material';
-import AlertMessage from 'components/AlertMessage';
-import PriceCard from 'components/PriceCard';
+
 import { useAlertMessage } from 'hooks';
 import { prices } from 'mocks/prices';
 
 import { TfHeadline } from 'themeforest-design-system-react';
+
+import AlertMessage from 'components/AlertMessage';
+import PriceCard from 'components/PriceCard';
 
 import { Props } from './types';
 

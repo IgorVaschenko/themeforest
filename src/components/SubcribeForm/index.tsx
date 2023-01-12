@@ -5,13 +5,15 @@ import { subscribeEmailSchema as validationSchema } from 'constants/validation';
 import emailjs from '@emailjs/browser';
 
 import { Button, Grid } from '@mui/material';
-import AlertMessage from 'components/AlertMessage';
+
 import { useFormik } from 'formik';
 import { useAlertMessage } from 'hooks';
 
 import useMatch from 'hooks/useMatch';
 import { themeParams } from 'theme';
 import { TfButton } from 'themeforest-design-system-react';
+
+import AlertMessage from 'components/AlertMessage';
 
 import { Input, SubscribeContainer } from './styled';
 

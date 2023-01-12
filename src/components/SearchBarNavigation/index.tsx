@@ -3,9 +3,10 @@ import { useCallback, useState } from 'react';
 import { Autocomplete } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
+import { blogInfo } from 'mocks';
+
 import BlogItem from 'components/BlogItem';
 import SearchBar from 'components/SearchBar';
-import { blogInfo } from 'mocks';
 
 const SearchBarNavigation = () => {
   const [searchValue, setSearchValue] = useState('');

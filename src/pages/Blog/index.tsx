@@ -2,6 +2,14 @@ import { useCallback, useDeferredValue, useMemo, useState } from 'react';
 
 import { Grid } from '@mui/material';
 
+import useMatch from 'hooks/useMatch';
+
+import { blogInfo, tagsList } from 'mocks';
+
+import { themeParams } from 'theme';
+
+import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
+
 import BlogList from 'components/BlogList';
 import Breadcrumbs from 'components/Breadcrumbs';
 import FooterLinks from 'components/FooterLinks';
@@ -9,10 +17,6 @@ import SearchBar from 'components/SearchBar';
 import Subscribe from 'components/Subcribe';
 
 import TagsList from 'components/TagsList';
-import useMatch from 'hooks/useMatch';
-import { blogInfo, tagsList } from 'mocks';
-import { themeParams } from 'theme';
-import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
 
 import { BlogHeader } from './styled';
 const Blog = () => {

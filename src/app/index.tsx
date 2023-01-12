@@ -2,13 +2,14 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 
 import { ThemeProvider } from '@emotion/react';
 
-import ErrorBoundary from 'components/ErrorBoundary';
-import Header from 'components/Header';
 import { theme } from 'theme';
 
 import GlobalStyles from 'theme/globalStyles';
 
 import { ScrollToTop } from 'utils';
+
+import ErrorBoundary from 'components/ErrorBoundary';
+import Header from 'components/Header';
 
 import { routes } from '../routes';
 

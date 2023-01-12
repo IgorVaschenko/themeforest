@@ -2,11 +2,13 @@ import { useState, useCallback, useMemo } from 'react';
 
 import { Grid } from '@mui/material';
 
+import { TfButton, TfCard } from 'themeforest-design-system-react';
+
+import { parseDuration } from 'utils';
+
 import PriceDialog from 'components/PriceDialog';
 import ProsList from 'components/ProsList';
 import ToggleGroup from 'components/ToggleGroup';
-import { TfButton, TfCard } from 'themeforest-design-system-react';
-import { parseDuration } from 'utils';
 
 import { CardContainer } from './styled';
 import { Props } from './types';

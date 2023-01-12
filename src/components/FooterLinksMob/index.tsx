@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
 
 import { Grid } from '@mui/material';
-import FollowUs from 'components/FollowUs';
-import MobileLinks from 'components/MobileLinks';
+
 import { Paths } from 'routes';
 import { themeParams } from 'theme';
 import { TfIcons } from 'themeforest-design-system-react';
+
+import FollowUs from 'components/FollowUs';
+import MobileLinks from 'components/MobileLinks';
 
 const FooterLinksMob = () => {
   return (

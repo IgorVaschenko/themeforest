@@ -8,11 +8,13 @@ import emailjs from '@emailjs/browser';
 import { Button, TextField } from '@mui/material';
 
 import Grid from '@mui/material/Grid';
-import AlertMessage from 'components/AlertMessage';
+
 import { useFormik } from 'formik';
 import { useAlertMessage } from 'hooks';
 import { TfHeadline } from 'themeforest-design-system-react';
 import { reduceFieldsName } from 'utils';
+
+import AlertMessage from 'components/AlertMessage';
 
 import { Props } from './types';
 
