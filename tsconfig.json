@@ -1,0 +1,108 @@
+{
+  "outDir": "./dist/",
+  "noImplicitAny": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "declaration": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "types": [
+      "node"
+    ],
+      "baseUrl": "src/",
+      "paths": {
+        "app/*": [
+          "src/app/*"
+        ],
+        "components/*": [
+          "components/*"
+        ],
+        "constants/*": [
+          "constants/*"
+        ],
+        "@pages/*": [
+          "src/pages/*"
+        ],
+        "@utils/*": [
+          "src/utils/*"
+        ],
+        "@theme/*": [
+          "src/theme/*"
+        ],
+        "@types/*": [
+          "src/types/*"
+        ],
+        "@hooks/*": [
+          "src/hooks/*"
+        ],
+        "assets/*": [
+          "src/assets/*"
+        ],
+        "@src/*": [
+          "src/*"
+        ],
+        "@mocks/*": [
+          "src/mocks/*"
+        ],
+      },
+      "plugins": [
+        {
+            "transform": "typescript-transform-paths"
+        },
+        {
+            "transform": "typescript-transform-paths",
+            "afterDeclarations": true
+        }
+    ], 
+  },
+  "include": [
+    "src",
+  ]
+}
+
+
+// "@components/*": [
+//   "src/components/*"
+// ],
+// "@components": [
+//   "src/components/"
+// ],
+// "@pages/*": [
+//   "src/pages/*"
+// ],
+// "@constants": [
+//   "src/constants/"
+// ],
+// "@utils": [
+//   "src/utils/"
+// ],
+// "@theme": [
+//   "src/theme/"
+// ],
+// "@types": [
+//   "src/types/"
+// ],
+// "@hooks": [
+//   "src/hooks/"
+// ],
+// "@assets/*": [
+//   "src/assets/*"
+// ],
+// "@src": [
+//   "src/"
+// ],
+// "@mocks": [
+//   "src/mocks/"
+// ],
