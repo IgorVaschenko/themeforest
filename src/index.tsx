@@ -1,5 +1,4 @@
 import App from 'app';
-console.log('test');
 
 import ReactDOM from 'react-dom/client';
 
