@@ -1,9 +1,8 @@
 import { Button, Grid } from '@mui/material';
+import BlogItem from 'components/BlogItem';
 import { useBlogOptions } from 'hooks';
 
 import { TfHeadline } from 'themeforest-design-system-react';
-
-import BlogItem from 'components/BlogItem';
 
 import { Props } from './types';
 

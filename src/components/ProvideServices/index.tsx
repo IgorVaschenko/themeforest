@@ -1,13 +1,12 @@
 import { statistics } from 'constants/statistics';
 
 import { Grid } from '@mui/material';
+import Clients from 'components/Clients';
+import Statistics from 'components/Statistics';
 import { clients } from 'mocks';
 import { themeParams } from 'theme';
 import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
 import { Props } from 'types';
-
-import Clients from 'components/Clients';
-import Statistics from 'components/Statistics';
 
 const ProvideServices = ({ isMatch }: Props) => {
   return (

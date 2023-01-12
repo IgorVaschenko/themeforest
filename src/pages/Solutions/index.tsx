@@ -1,8 +1,4 @@
 import { Grid } from '@mui/material';
-import useMatch from 'hooks/useMatch';
-import { servicesInfo, solutionInfo, testimonials } from 'mocks';
-import { Banner, themeParams, theme } from 'theme';
-import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
 
 import Benefits from 'components/Benefits';
 import Breadcrumbs from 'components/Breadcrumbs';
@@ -10,6 +6,10 @@ import ChooseList from 'components/ChooseList';
 import Footer from 'components/Footer';
 
 import Testimonials from 'components/Testimonials';
+import useMatch from 'hooks/useMatch';
+import { servicesInfo, solutionInfo, testimonials } from 'mocks';
+import { Banner, themeParams, theme } from 'theme';
+import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
 
 const Solutions = () => {
   const { isMatch } = useMatch();

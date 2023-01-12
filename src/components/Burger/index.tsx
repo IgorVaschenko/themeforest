@@ -1,8 +1,8 @@
 import { Grid } from '@mui/material';
-import { TfIcons } from 'themeforest-design-system-react';
 
 import FollowUs from 'components/FollowUs';
 import MobileLinks from 'components/MobileLinks';
+import { TfIcons } from 'themeforest-design-system-react';
 
 import { Props } from './types';
 

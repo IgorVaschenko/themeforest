@@ -1,18 +1,17 @@
 import { Navigate, useParams } from 'react-router-dom';
 
 import { Grid, useMediaQuery, useTheme } from '@mui/material';
+import BlogList from 'components/BlogList';
+import FooterLinks from 'components/FooterLinks';
+import SearchBarNavigation from 'components/SearchBarNavigation';
+import Subscribe from 'components/Subcribe';
+import TagsList from 'components/TagsList';
 import { blogInfo, socials } from 'mocks';
 import { tagsList } from 'mocks';
 import { getPageUrl, Paths } from 'routes';
 import { Banner } from 'theme';
 import { TfHeadline, TfIcons, TfLink, TfParagraph } from 'themeforest-design-system-react';
 import { getPopularNews, getRelatedNews } from 'utils';
-
-import BlogList from 'components/BlogList';
-import FooterLinks from 'components/FooterLinks';
-import SearchBarNavigation from 'components/SearchBarNavigation';
-import Subscribe from 'components/Subcribe';
-import TagsList from 'components/TagsList';
 
 import { Post } from './styled';
 

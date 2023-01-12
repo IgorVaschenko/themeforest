@@ -2,11 +2,6 @@ import { statistics } from 'constants/statistics';
 
 import Grid from '@mui/material/Grid';
 
-import useMatch from 'hooks/useMatch';
-import { clients, contacts, testimonials } from 'mocks';
-import { Banner, theme, themeParams } from 'theme';
-import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
-
 import Breadcrumbs from 'components/Breadcrumbs';
 import Clients from 'components/Clients';
 import ContactForm from 'components/ContactForm';
@@ -17,6 +12,10 @@ import Statistics from 'components/Statistics';
 import Subscribe from 'components/Subcribe';
 
 import Testimonials from 'components/Testimonials';
+import useMatch from 'hooks/useMatch';
+import { clients, contacts, testimonials } from 'mocks';
+import { Banner, theme, themeParams } from 'theme';
+import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
 
 import { AboutHeader } from './styled';
 

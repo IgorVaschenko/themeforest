@@ -1,6 +1,12 @@
 import { NavLink } from 'react-router-dom';
 
 import { Grid } from '@mui/material';
+import Benefits from 'components/Benefits';
+import BlogHome from 'components/BlogHome';
+import Footer from 'components/Footer';
+import Pricing from 'components/Pricing';
+import ProvideServices from 'components/ProvideServices';
+import Testimonials from 'components/Testimonials';
 import useMatch from 'hooks/useMatch';
 import { benefits, blogInfo, testimonials } from 'mocks';
 
@@ -9,15 +15,6 @@ import { theme, themeParams } from 'theme';
 import { Banner } from 'theme/styled';
 
 import { TfButton, TfHeadline, TfParagraph } from 'themeforest-design-system-react';
-
-import Benefits from 'components/Benefits';
-
-import BlogHome from 'components/BlogHome';
-import Footer from 'components/Footer';
-import Pricing from 'components/Pricing';
-import ProvideServices from 'components/ProvideServices';
-
-import Testimonials from 'components/Testimonials';
 
 import { TfHeadlineStyled, CircleLinkContainer } from './styled';
 

@@ -4,6 +4,7 @@ import React from 'react';
 
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
+import FooterLinksMob from 'components/FooterLinksMob';
 import { contacts } from 'mocks/contacts';
 import { socials } from 'mocks/socials';
 
@@ -13,8 +14,6 @@ import { themeParams } from 'theme';
 import { TfHeadline, TfIcons, TfLink, TfParagraph } from 'themeforest-design-system-react';
 
 import { Props } from 'types';
-
-import FooterLinksMob from 'components/FooterLinksMob';
 
 const FooterLinks = ({ isMatch }: Props) => {
   return (

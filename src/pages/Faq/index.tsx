@@ -1,15 +1,13 @@
 import { useState, useCallback } from 'react';
 
 import { Grid } from '@mui/material';
+import Breadcrumbs from 'components/Breadcrumbs';
+import FaqItem from 'components/FaqItem';
+import Footer from 'components/Footer';
 import useMatch from 'hooks/useMatch';
 import { faqInfo } from 'mocks';
 import { themeParams } from 'theme';
 import { TfHeadline, TfParagraph } from 'themeforest-design-system-react';
-
-import Breadcrumbs from 'components/Breadcrumbs';
-
-import FaqItem from 'components/FaqItem';
-import Footer from 'components/Footer';
 
 const Faq = () => {
   const { isMatch } = useMatch();

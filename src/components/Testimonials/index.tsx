@@ -1,10 +1,9 @@
 import Grid from '@mui/material/Grid';
+import ArrowControls from 'components/ArrowControls';
+import Testimonial from 'components/Testimonial';
 import { usePagination } from 'hooks';
 
 import { TfHeadline } from 'themeforest-design-system-react';
-
-import ArrowControls from 'components/ArrowControls';
-import Testimonial from 'components/Testimonial';
 
 import { Props } from './types';
 

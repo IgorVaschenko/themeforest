@@ -1,17 +1,14 @@
 import { Grid } from '@mui/material';
 
+import Breadcrumbs from 'components/Breadcrumbs';
+import ContactForm from 'components/ContactForm';
+import FooterLinks from 'components/FooterLinks';
+import MapBox from 'components/MapBox';
 import useMatch from 'hooks/useMatch';
 import { contacts } from 'mocks';
 
 import { themeParams } from 'theme';
 import { TfHeadline, TfIcons, TfParagraph } from 'themeforest-design-system-react';
-
-import Breadcrumbs from 'components/Breadcrumbs';
-import ContactForm from 'components/ContactForm';
-
-import FooterLinks from 'components/FooterLinks';
-
-import MapBox from 'components/MapBox';
 
 import { TfHeadlineStyled } from './styled';
 
