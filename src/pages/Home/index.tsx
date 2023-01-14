@@ -232,7 +232,7 @@ const Home = () => {
         <Grid item xs={1} />
       </Grid>
 
-      <Grid container mt={12} mb={12}>
+      <Grid container mt={12} mb={8}>
         <Grid item md={2} xs={1} />
         <Grid item md={8} xs={10}>
           <Testimonials
@@ -246,14 +246,14 @@ const Home = () => {
       </Grid>
 
       <Grid container>
-        <Grid item md={2} xs={1} />
-        <Grid item md={8} xs={10}>
+        <Grid item md={1} xs={1} />
+        <Grid item md={10} xs={10}>
           <Pricing isMatch={isMatch} />
         </Grid>
-        <Grid item md={2} xs={1} />
+        <Grid item md={1} xs={1} />
       </Grid>
 
-      <Grid container mt={12} mb={12}>
+      <Grid container mt={10} mb={12}>
         <Grid item md={2} xs={1} />
         <Grid item md={8} xs={10}>
           <BlogHome title="Our blog" blogData={blogInfo} isMatch={isMatch} />

@@ -11,7 +11,7 @@ const ChooseList = ({ chooseItems }: Props) => (
   <Grid container direction="column" spacing={1}>
     {chooseItems.map(({ title, subtitle }) => (
       <Fragment key={title}>
-        <Grid container spacing={1} alignItems="center">
+        <Grid container spacing={1} alignItems="center" mb={-3}>
           <Grid item>
             <TfIcons iconName="icon_checkmark_blue" />
           </Grid>
@@ -22,7 +22,12 @@ const ChooseList = ({ chooseItems }: Props) => (
           </Grid>
         </Grid>
         {subtitle && (
-          <TfParagraph variant="p2" component="p" color={themeParams.colors.greyText}>
+          <TfParagraph
+            variant="p2"
+            component="p"
+            color={themeParams.colors.greyText}
+            style={{ maxHeight: '80px', overflow: 'hidden' }}
+          >
             {subtitle}
           </TfParagraph>
         )}

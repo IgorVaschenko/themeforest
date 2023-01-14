@@ -43,7 +43,6 @@
     "prepare": "husky install",
     "prettier": "prettier --write src/**/*.{ts,tsx,css,md,json} --config ./.prettierrc",
     "clean": "rimraf build",
-    "cypress": "cypress open",
     "cypress:run": "cypress run && cypress run --component"
   },
   "eslintConfig": {

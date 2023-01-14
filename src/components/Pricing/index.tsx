@@ -13,13 +13,15 @@ import { Props } from './types';
 const Pricing = ({ isMatch }: Props) => {
   const [alertProps, setSuccess, setError] = useAlertMessage(500000);
   return (
-    <Grid container direction="column">
+    <>
       <Grid container>
-        <Grid item>
+        <Grid item md={1} xs={1} />
+        <Grid item xs={10}>
           <TfHeadline variant={isMatch ? 'h3' : 'h2'} component="p">
             Our pricing
           </TfHeadline>
         </Grid>
+        <Grid item md={2} xs={1} />
       </Grid>
       <Grid item xs={12}>
         <Grid container justifyContent="center">
@@ -34,7 +36,7 @@ const Pricing = ({ isMatch }: Props) => {
         </Grid>
       </Grid>
       {alertProps.severity && <AlertMessage {...alertProps} />}
-    </Grid>
+    </>
   );
 };
 

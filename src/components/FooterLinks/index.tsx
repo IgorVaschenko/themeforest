@@ -68,7 +68,7 @@ const FooterLinks = ({ isMatch }: Props) => {
                     </Grid>
                     <Grid container direction="column" color={themeParams.colors.greyText}>
                       {routes
-                        .filter((isNav) => isNav)
+                        .filter(({ isNav }) => isNav)
                         .map(({ path, label }) => (
                           <React.Fragment key={path}>
                             <NavLink to={path} style={{ margin: '-10px 0' }}>

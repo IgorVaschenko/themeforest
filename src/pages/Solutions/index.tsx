@@ -126,7 +126,7 @@ const Solutions = () => {
                   />
                 </Grid>
                 <Grid item md={5} xs={12}>
-                  <Grid container alignItems="center">
+                  <Grid container alignItems="center" ml={-15}>
                     <Grid item>
                       <TfHeadline variant="h1" component="p">
                         Why choose us?
