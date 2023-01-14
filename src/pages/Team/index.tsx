@@ -1,3 +1,5 @@
+import { useRef, useState, useEffect } from 'react';
+
 import { Grid } from '@mui/material';
 
 import useMatch from 'hooks/useMatch';
@@ -13,8 +15,23 @@ import FooterLinks from 'components/FooterLinks';
 import Subscribe from 'components/Subcribe';
 import TeamBox from 'components/TeamBox';
 
+import { LastElement } from './styled';
+
 const Team = () => {
   const { isMatch } = useMatch();
+  const [desktopCount, setDesktopCount] = useState(9);
+  const [mobileCount, setMobileCount] = useState(6);
+  const lastElement = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const callbackFunction = (entries: IntersectionObserverEntry[]) => {
+      if (entries[0].isIntersecting) {
+        isMatch ? setMobileCount((prev) => prev + 3) : setDesktopCount((prev) => prev + 3);
+      }
+    };
+    const observer = new IntersectionObserver(callbackFunction);
+    if (lastElement.current) observer.observe(lastElement?.current);
+  }, [isMatch]);
   return (
     <>
       <Grid container pt={5} sx={{ backgroundColor: `${themeParams.colors.secondary}` }}>
@@ -53,7 +70,8 @@ const Team = () => {
         </Grid>
       </Grid>
 
-      <TeamBox persons={teamInfo} count={isMatch ? 6 : 9} isMatch={isMatch} />
+      <TeamBox persons={teamInfo} count={isMatch ? mobileCount : desktopCount} isMatch={isMatch} />
+      <LastElement ref={lastElement as React.RefObject<HTMLDivElement>} />
       <Subscribe isMatch={isMatch} />
       <FooterLinks isMatch={isMatch} />
     </>

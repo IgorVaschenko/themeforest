@@ -1,5 +1,5 @@
 export declare const enum Paths {
-  BASE = '/',
+  BASE = '/themeforest',
   ROOT = '/',
   HOME = 'home',
   BLOG = 'blog',
@@ -13,6 +13,8 @@ export declare const enum Paths {
 }
 export declare const getPageUrl: (path: Paths) => string;
 export declare const getNewsUrl: (id: string) => string;
+export declare const getServicesUrl: (id: string) => string;
+export declare const getSolutionsUrl: (id: string) => string;
 export declare const routes: (
   | {
       path: string;
