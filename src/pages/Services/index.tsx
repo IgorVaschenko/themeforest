@@ -7,10 +7,12 @@ import { TfCard, TfHeadline, TfLink, TfParagraph } from 'themeforest-design-syst
 
 import Breadcrumbs from 'components/Breadcrumbs';
 import Footer from 'components/Footer';
+import InfoCard from 'components/InfoCard';
 import ProvideServices from 'components/ProvideServices';
 
 const Services = () => {
   const { isMatch } = useMatch();
+
   return (
     <>
       <Grid container mt={3}>
@@ -48,18 +50,8 @@ const Services = () => {
         <Grid item xs={1} />
         <Grid item xs={10}>
           <Grid container spacing={{ xs: 2, md: 3 }} justifyContent="center">
-            {servicesInfo.map(({ image, title, subtitle }) => (
-              <Grid item xs={12} md={5} key={title}>
-                <TfCard
-                  view={!isMatch ? 'services' : 'services_mobile'}
-                  variant={!isMatch ? 'glass-icons' : 'glass_icons_mob'}
-                  icon={image}
-                  title={title}
-                  subtitle={subtitle}
-                >
-                  <TfLink variant="arrow" text="Read more" href=""></TfLink>
-                </TfCard>
-              </Grid>
+            {servicesInfo.map(({ image, title, subtitle, link }) => (
+              <InfoCard key={image} image={image} title={title} subtitle={subtitle} link={link} />
             ))}
           </Grid>
         </Grid>

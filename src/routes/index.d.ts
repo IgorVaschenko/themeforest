@@ -1,5 +1,5 @@
 export declare const enum Paths {
-  BASE = '/themeforest',
+  BASE = '/',
   ROOT = '/',
   HOME = 'home',
   BLOG = 'blog',

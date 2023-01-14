@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom';
+
 import { Grid } from '@mui/material';
 
 import useMatch from 'hooks/useMatch';
 
+import { getSolutionsUrl } from 'routes';
 import { TfCard, TfLink } from 'themeforest-design-system-react';
 
 import { Props } from './types';
@@ -10,7 +13,7 @@ const Benefits = ({ benefits, variant }: Props) => {
   const { isMatch } = useMatch();
   return (
     <Grid container spacing={6} mt={!isMatch ? 5 : 0} mb={10} justifyContent="center">
-      {benefits.map(({ icon, title, subtitle }, idx) => (
+      {benefits.map(({ icon, title, subtitle, id }, idx) => (
         <Grid
           item
           md={6}
@@ -32,7 +35,12 @@ const Benefits = ({ benefits, variant }: Props) => {
               title={title}
               subtitle={subtitle}
             >
-              {variant === 'solutions' && <TfLink variant="arrow" text="Read more" href="" />}
+              {variant === 'solutions' && id && (
+                <Link to={getSolutionsUrl(id)}>
+                  {' '}
+                  <TfLink variant="arrow" text="Read more" href="" />{' '}
+                </Link>
+              )}
             </TfCard>
           </Grid>
         </Grid>

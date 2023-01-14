@@ -5,6 +5,7 @@ import Blog from 'pages/Blog';
 import Contacts from 'pages/Contacts';
 import Faq from 'pages/Faq';
 import Home from 'pages/Home';
+import InfoPage from 'pages/InfoPage';
 import News from 'pages/News';
 import NotFound from 'pages/NotFound';
 import Services from 'pages/Services';
@@ -27,6 +28,8 @@ export const enum Paths {
 
 export const getPageUrl = (path: Paths) => `${Paths.BASE}/${path}`;
 export const getNewsUrl = (id: string) => `${getPageUrl(Paths.BLOG)}/${id}`;
+export const getServicesUrl = (id: string) => `${getPageUrl(Paths.SERVICES)}/${id}`;
+export const getSolutionsUrl = (id: string) => `${getPageUrl(Paths.SOLUTIONS)}/${id}`;
 
 const HomeRedirection = <Navigate to={getPageUrl(Paths.HOME)} replace />;
 
@@ -77,6 +80,18 @@ export const routes = [
     path: `${getPageUrl(Paths.BLOG)}/:id`,
     element: <News />,
     label: 'News',
+    isNav: false,
+  },
+  {
+    path: `${getPageUrl(Paths.SOLUTIONS)}/:id`,
+    element: <InfoPage />,
+    label: 'InfoPageSolutions',
+    isNav: false,
+  },
+  {
+    path: `${getPageUrl(Paths.SERVICES)}/:id`,
+    element: <InfoPage />,
+    label: 'InfoPageServices',
     isNav: false,
   },
   {

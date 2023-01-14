@@ -33,3 +33,4 @@ jobs:
         with:
           install: false
           component: true
+          browser: chrome

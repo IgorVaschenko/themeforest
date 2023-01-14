@@ -10055,17 +10055,17 @@ text-table@^0.2.0:
   resolved "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-themeforest-design-system-react@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.npmjs.org/themeforest-design-system-react/-/themeforest-design-system-react-1.1.8.tgz"
-  integrity sha512-8SNBdqXsOPGdkakJVuUPIbxghube38zblKLp2G9lE6WhuZ6oSUPHY48/GeTpvjW70ftYYCuvoJ4z+MmT10qVXg==
+themeforest-design-system-react@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/themeforest-design-system-react/-/themeforest-design-system-react-1.1.9.tgz#641080d0bd56a44b26fa409a7e7a7024f7cf6fe3"
+  integrity sha512-l2/BVSOhMOLZWtlYIgauiVghxoUhKF3npKgjOPwYvhUzZmRXjLPnjZBedOMVccoIhFbqEQ7OnIQSpXSjY/vkKA==
   dependencies:
-    themeforest-design-system "^1.1.8"
+    themeforest-design-system "^1.1.9"
 
-themeforest-design-system@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.npmjs.org/themeforest-design-system/-/themeforest-design-system-1.1.8.tgz"
-  integrity sha512-qQ5lVtD7Wo4KQXoQPqWDtU/JGf7BnnoVCHEfvKao9TLQb/IX2HWeBRXfF3uyhFt0kUhLxZfpuuWQZ3FI4ADjtQ==
+themeforest-design-system@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/themeforest-design-system/-/themeforest-design-system-1.1.9.tgz#404a88fa49025f05b125d12d9fd163749232fb24"
+  integrity sha512-XLU034u+68rB0qBkAY5rPPTix1dCeikvEiqnfEwGPY+sYcc91JssEKxXBj537kxRyskspXlqbSs7RDxRRPLe4Q==
   dependencies:
     "@stencil/core" "^2.13.0"
     "@stencil/react-output-target" "^0.3.1"
