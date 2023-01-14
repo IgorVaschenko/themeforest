@@ -21,10 +21,15 @@ jobs:
         run: npm run prettier
       - name: eslint code
         run: npm run lint:fix
-      - name: cypress tests
-        uses: cypress-io/github-action@v4.2.0
+      - name: e2e test
+        uses: cypress-io/github-action@v5
         with:
           install: false
-          command: cypress run && cypress run --component
+          start: npm start
           wait-on-timeout: 120
           browser: chrome
+      - name: components test
+        uses: cypress-io/github-action@v5
+        with:
+          install: false
+          component: true
