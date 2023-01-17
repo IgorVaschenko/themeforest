@@ -1,6 +1,6 @@
 describe('template spec', () => {
   it('home', () => {
-    cy.visit('/');
+    cy.visit('/#/');
     cy.get("input[placeholder='Your email']")
       .type('testEmail')
       .should('be.visible')
