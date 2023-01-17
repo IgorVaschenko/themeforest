@@ -61,27 +61,27 @@ const BlogItem = ({
           </TfCard>
         </Link>
       ) : (
-        <TfCard
-          width={variant === 'search-bar' ? '400px' : '100%'}
-          view="blog"
-          variant={
-            variant === 'popular'
-              ? 'without_description'
-              : variant === 'search-bar'
-              ? 'without_description'
-              : 'small'
-          }
-          image={image}
-          title={title}
-          date={subtitle}
-          subtitle={paragraph}
-        >
-          {(variant === 'popular' || variant === 'home') && (
-            <Link to={getNewsUrl(id)}>
+        <Link to={getNewsUrl(id)}>
+          <TfCard
+            width={variant === 'search-bar' ? '400px' : '100%'}
+            view="blog"
+            variant={
+              variant === 'popular'
+                ? 'without_description'
+                : variant === 'search-bar'
+                ? 'without_description'
+                : 'small'
+            }
+            image={image}
+            title={title}
+            date={subtitle}
+            subtitle={paragraph}
+          >
+            {(variant === 'popular' || variant === 'home') && (
               <TfLink variant="arrow" text="Read more" />
-            </Link>
-          )}
-        </TfCard>
+            )}
+          </TfCard>
+        </Link>
       )}
     </Grid>
   );
