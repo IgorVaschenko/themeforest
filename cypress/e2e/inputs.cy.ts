@@ -1,12 +1,12 @@
 describe('template spec', () => {
-  // it('home', () => {
-  //   cy.visit('/#/');
-  //   cy.get("input[placeholder='Your email']")
-  //     .type('testEmail')
-  //     .should('be.visible')
-  //     .should('exist')
-  //     .should('have.value', 'testEmail');
-  // });
+  it('home', () => {
+    cy.visit('/');
+    cy.get("input[placeholder='Your email']")
+      .type('testEmail')
+      .should('be.visible')
+      .should('exist')
+      .should('have.value', 'testEmail');
+  });
   it('about', () => {
     cy.visit('/#/themeforest/about');
     cy.get("input[name='name']")
